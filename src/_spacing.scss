@@ -1,0 +1,69 @@
+$spacing-0: 0 !default;
+$spacing-1: 0.5em !default;
+$spacing-2: 1em !default;
+$spacing-3: 2em !default;
+$spacing-4: 4em !default;
+$spacing-5: 5em !default;
+
+$spacings: () !default;
+$spacings: map-merge(
+                (
+                        "0": $spacing-0,
+                        "1": $spacing-1,
+                        "2": $spacing-2,
+                        "3": $spacing-3,
+                        "4": $spacing-4,
+                        "5": $spacing-5
+                ),
+                $spacings
+);
+
+@each $spacing, $value in $spacings {
+  .m-#{$spacing} {
+    margin: $value;
+  }
+}
+
+@each $spacing, $value in $spacings {
+  .mt-#{$spacing} {
+    margin-top: $value;
+  }
+}
+
+@each $spacing, $value in $spacings {
+  .mb-#{$spacing} {
+    margin-bottom: $value;
+  }
+}
+
+@each $spacing, $value in $spacings {
+  .ml-#{$spacing} {
+    margin-left: $value;
+  }
+}
+
+@each $spacing, $value in $spacings {
+  .mr-#{$spacing} {
+    margin-right: $value;
+  }
+}
+
+@each $spacing, $value in $spacings {
+  .p-#{$spacing} {
+    padding: $value;
+  }
+}
+
+@each $spacing, $value in $spacings {
+  .pv-#{$spacing} {
+    padding-top: $value;
+    padding-bottom: $value;
+  }
+}
+
+@each $spacing, $value in $spacings {
+  .ph-#{$spacing} {
+    padding-right: $value;
+    padding-left: $value;
+  }
+}

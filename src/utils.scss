@@ -1,0 +1,68 @@
+/*Utils*/
+
+@import "variables";
+@import "colors";
+@import "spacing";
+@import "buttons";
+@import "badge";
+
+.gapless {
+	border-spacing: 0;
+}
+.vc {
+	position: relative;
+	top: 40%;
+	transform: perspective(1px) translateY(-45%);
+}
+.pill {
+	border-radius: 9999px;
+}
+.rounded {
+	border-radius: 4px;
+}
+.tc {
+	text-align: center;
+}
+.mega {
+	font-size: 3.5em;
+}
+.large {
+	font-size: 1.5em;
+}
+.small {
+	font-size: .7em;
+}
+.caps {
+	text-transform: uppercase;
+}
+.tracked {
+	letter-spacing: .1em;
+}
+.vh-100 {
+	height: 100vh;
+}
+.inline {
+	display: inline-block;
+}
+.bold {
+	font-weight: $font-weight-bold;
+}
+.normal {
+	font-weight: $font-weight-normal;
+}
+.light {
+	font-weight: $font-weight-light;
+}
+.dim {
+	opacity: 1;
+	transition: opacity .15s ease-in;
+	&:hover {
+		opacity: .5;
+		transition: opacity .15s ease-in;
+	}
+	&:focus {
+		opacity: .5;
+		transition: opacity .15s ease-in;
+	}
+}
+

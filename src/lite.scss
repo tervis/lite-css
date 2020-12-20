@@ -1,0 +1,149 @@
+/*
+* Lite 1.0.0
+* Primary Color set to: #FA0
+* Font set to: Nunito
+*/
+@import "reset";
+@import "variables";
+
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
+pre {
+  overflow: auto;
+  padding: 1em;
+  border: solid $light;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.row {
+  width: 100%;
+}
+
+.card {
+  &:focus {
+    outline: 0;
+    border: solid $primary;
+  }
+
+  padding: 1em;
+  border: solid $light;
+}
+
+hr {
+  outline: 0;
+  border: solid $primary;
+}
+
+a {
+  &:hover {
+    opacity: .6;
+  }
+
+  color: $primary;
+  text-decoration: none;
+}
+
+.btn {
+  &:hover {
+    opacity: .6;
+  }
+
+  padding: 1em;
+  text-transform: uppercase;
+  background: white;
+  border: solid;
+  font: .7em $font;
+}
+
+.btn- {
+  &primary {
+    border-color: $primary;
+    background-color: $primary;
+    color: $white;
+  }
+
+  &outline- {
+    &primary {
+      border-color: $primary;
+      color: $primary;
+    }
+  }
+}
+
+.container {
+  max-width: 60em;
+  padding: 1em;
+  margin: auto;
+  font: 1em/1.6 $font;
+}
+
+h6 {
+  font: 100 1em $font;
+}
+
+h5 {
+  font: 100 1.2em $font;
+}
+
+h3 {
+  font: 100 2em $font;
+}
+
+h4 {
+  font: 100 1.5em $font;
+}
+
+h2 {
+  font: 100 2.2em $font;
+}
+
+h1 {
+  font: 100 2.5em $font;
+}
+
+td {
+  padding: 1em;
+  text-align: left;
+  border-bottom: solid $light;
+}
+
+th {
+  padding: 1em;
+  text-align: left;
+  border-bottom: solid $light;
+}
+
+@media (min-width: 35em) {
+  .col {
+    display: table-cell;
+  }
+  .\31 {
+    width: 5%;
+  }
+  .\33 {
+    width: 22%;
+  }
+  .\34 {
+    width: 30%;
+  }
+  .\35 {
+    width: 40%;
+  }
+  .\32 {
+    width: 15%;
+  }
+  .\36 {
+    width: 50%;
+  }
+  .row {
+    display: table;
+    border-spacing: 1em 0;
+  }
+}
+

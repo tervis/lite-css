@@ -1,0 +1,26 @@
+
+@import "variables";
+
+// Badges
+.badge {
+  margin-left: $badge-padding-x;
+  padding: $badge-padding-y $badge-padding-x;
+  border-radius: $badge-pill-border-radius;
+  font-weight: $badge-font-weight;
+  font-size: $badge-font-size;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  text-transform: lowercase;
+  // Empty badges collapse automatically
+  &:empty {
+    display: none;
+  }
+}
+
+// Quick fix for badges in buttons
+.badge.badge-corner {
+  position: relative;
+  top: -($badge-padding-x*2);
+  right: -($badge-padding-x*2);
+}

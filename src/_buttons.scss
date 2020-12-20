@@ -1,0 +1,31 @@
+/* Buttons */
+
+@import "variables";
+
+$btn-colors: () !default;
+$btn-colors: map-merge(
+                (
+                        "success": $success,
+                        "info": $info,
+                        "warning": $warning,
+                        "error": $error,
+                        "light": $light,
+                        "dark": $dark,
+                ),
+                $btn-colors
+);
+
+@each $color, $value in $btn-colors {
+  .btn-#{$color} {
+    background-color: $value;
+    border-color: $value;
+    color: $white;
+  }
+}
+
+@each $color, $value in $btn-colors {
+  .btn-outline-#{$color} {
+    border-color: $value;
+    color: $value;
+  }
+}

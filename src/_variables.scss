@@ -1,0 +1,66 @@
+// Color system
+
+
+$white: #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black: #000 !default;
+
+$light: #eee;
+
+$primary: #fa0;
+$warning: #ffd600;
+$error: #d50000;
+$success: #00c853;
+$info: #2962ff;
+
+$dark: #292b2c;
+$gray: #CCC;
+
+$grays: () !default;
+$grays: map-merge(
+                (
+                        "100": $gray-100,
+                        "200": $gray-200,
+                        "300": $gray-300,
+                        "400": $gray-400,
+                        "500": $gray-500,
+                        "600": $gray-600,
+                        "700": $gray-700,
+                        "800": $gray-800,
+                        "900": $gray-900
+                ),
+                $grays
+);
+
+$font-weight-light:           300 !default;
+$font-weight-normal:          400 !default;
+$font-weight-bold:            700 !default;
+
+$font: Helvetica, sans-serif;
+//$font: nunito;
+//@import url("https://fonts.googleapis.com/css?family=Nunito:300,400,700");
+
+$border-width:                1px !default;
+$border-color:                $gray-300 !default;
+$border-radius:               .25rem !default;
+
+$badge-font-size:                   75% !default;
+$badge-font-weight:                 $font-weight-bold !default;
+$badge-border-radius: 10rem;
+
+$badge-padding-x: .6em;
+$badge-padding-y: .3em;
+
+// Use a higher than normal value to ensure completely rounded edges when
+// customizing padding or font-size on labels.
+$badge-pill-border-radius:          10rem !default;
+
+
