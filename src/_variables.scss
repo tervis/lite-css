@@ -2,6 +2,15 @@
 
 
 $white: #fff !default;
+$primary-color-dark:   #FFA000 !default;
+$primary-color:        #FFC107 !default;
+$primary-color-light:  #FFECB3 !default;
+$primary-color-text:   #212121 !default;
+$accent-color:         #FF5722 !default;
+$primary-text-color:   #212121 !default;
+$secondary-text-color: #757575 !default;
+$divider-color:        #BDBDBD !default;
+
 $gray-100: #f8f9fa !default;
 $gray-200: #e9ecef !default;
 $gray-300: #dee2e6 !default;
@@ -11,18 +20,17 @@ $gray-600: #6c757d !default;
 $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
+
 $black: #000 !default;
 
 $light: #eee;
 
-$primary: #fa0;
-$warning: #ffd600;
-$error: #d50000;
-$success: #00c853;
-$info: #2962ff;
-
-$dark: #292b2c;
-$gray: #CCC;
+$primary: #fa0 !default;
+$warning: #ffd600 !default;
+$error: #d50000 !default;
+$success: #00c853 !default;
+$info: #2962ff !default;
+$dark: #292b2c !default;
 
 $grays: () !default;
 $grays: map-merge(
@@ -45,8 +53,6 @@ $font-weight-normal:          400 !default;
 $font-weight-bold:            700 !default;
 
 $font: Helvetica, sans-serif;
-//$font: nunito;
-//@import url("https://fonts.googleapis.com/css?family=Nunito:300,400,700");
 
 $border-width:                1px !default;
 $border-color:                $gray-300 !default;

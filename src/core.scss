@@ -1,0 +1,28 @@
+/*
+* Lite CSS Core 1.0.0
+* Primary Color set to: #FA0
+*/
+
+@import "reset";
+@import "variables";
+@import "base";
+@import "typography";
+@import "grid";
+
+.primary {
+  color: $primary;
+}
+.bg-primary {
+  background-color: $primary;
+}
+.b-primary {
+  border-color: $primary;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.white {
+  color: $white;
+}

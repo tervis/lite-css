@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Lite CSS Framework</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Link to your stylesheet here -->
+    <link rel="stylesheet" href="../dist/framework.min.css">
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+</head>
+
+<body class="m-0">
+<div class="tc vh-100 bg-info">
+    <div class="vc container white">
+        <h1 class="mega mb-0">Lite CSS Framework</h1>
+        <p class="large mb-2">A simple framework agnostic CSS library</p>
+        <a class="btn bg-info white pill pl-4 pr-4 inline" href="#utilities">Utilities</a>
+        <a class="btn bg-white info pill pl-4 pr-4 inline" href="#components">Components</a>
+    </div>
+</div>
+<div class="container">
+    <p>This site is built only with <a href="framework.html">Lite CSS Framework</a></p>
+    <p>Any other thoughts? Head to the <a href="https://github.com/tervis/lite-css">Github</a> repository and make an
+        issue! If you like this idea, don't forget to </p>
+    <div>
+        <a class="github-button" href="https://github.com/tervis/lite-css" data-icon="octicon-star" data-size="large"
+           data-show-count="true" aria-label="Star tervis/lite-css on GitHub">Star</a>
+    </div>
+    <h2 class="mb-1" id="utilities">Utilities</h2>
+    <p>For now, use the "view source" functionality of your browser as documentation</p>
+    <div class="card p-1 b-info">
+        <a href="#spacing" class="pl-2 pr-2 info">Spacing</a>
+        <a href="#colors" class="pl-2 pr-2 info">Colors</a>
+        <a href="#misc" class="pl-2 pr-2 info">Misc</a>
+    </div>
+    <div id="spacing">
+        <h3 class="mb-1">Spacing</h3> Lite CSS Framework uses a simple spacing system inspired by the likes of BassCSS
+        and Tachyons. <br/> You use t (top), b (bottom), l (left), and r (right) to say which direction you want, and
+        the number at the end is the level.
+        <div class="bg-info white pl-2 pr-2">pl-2 pr-2</div>
+        In this example, p means padding with levels from 0-5.
+        <div class="bg-info white ml-1 mt-2">ml-1 mt-2</div>
+        This example shows off margins. For the middle selector, you use t (top), b (bottom), l (left), and r (right) to
+        say which direction you want the margin.
+        <div class="bg-info white p-2 m-2">p-2 m-2</div>
+        If you want something on all sides, just do the above, with type then level.
+    </div>
+    <div id="colors">
+        <h3 class="mb-1">Colors</h3>
+
+        <h4>Text Colors</h4>
+        <span class="p-1 primary">primary</span>
+        <span class="p-1 info">info</span>
+        <span class="p-1 success">success</span>
+        <span class="p-1 warning">warning</span>
+        <span class="p-1 error">error</span>
+        <span class="p-1 black">black</span>
+        <span class="p-1 white bg-black">white</span>
+        <span class="p-1 dark bg-white">dark</span>
+
+        <h4>Background Colors</h4>
+        <div class="p-1 white bg-primary">bg-primary</div>
+        <div class="p-1 white bg-info">bg-info</div>
+        <div class="p-1 white bg-success">bg-success</div>
+        <div class="p-1 white bg-warning">bg-warning</div>
+        <div class="p-1 white bg-error">bg-error</div>
+        <div class="p-1 white bg-black">bg-black</div>
+        <div class="p-1 black bg-white">bg-white</div>
+        <div class="p-1 white bg-dark">bg-dark</div>
+
+        <h4>Border Colors</h4>
+        <div class="card p-1 b-primary">b-primary</div>
+        <div class="card p-1 b-info">b-info</div>
+        <div class="card p-1 b-success">b-success</div>
+        <div class="card p-1 b-warning">b-warning</div>
+        <div class="card p-1 b-error">b-error</div>
+        <div class="card p-1 b-black">b-black</div>
+        <div class="card p-1 b-white">b-white</div>
+        <div class="card p-1 b-dark">b-dark</div>
+    </div>
+    <div id="misc">
+        <h3 class="mb-1">Misc</h3>
+    </div>
+    <h2 class="mb-1" id="components">Components</h2>
+    <p>For now, use the "view source" functionality of your browser as documentation</p>
+    <div class="card p-1 b-primary">
+        <a href="#buttons" class="p-2">Buttons</a>
+        <a href="#alerts" class="p-2">Alerts</a>
+        <a href="#navbar" class="p-2">Navbar</a>
+        <a href="#badges" class="p-2">Badges</a>
+        <a href="#full" class="p-2">Full Page Landing</a>
+    </div>
+    <div id="buttons">
+        <h3 class="mb-1">Buttons</h3>
+        <h4>Basic Buttons</h4>
+        <button class="btn white bg-primary b-primary">Primary Button</button>
+        <button class="btn white bg-info b-info">Info Button</button>
+        <button class="btn white bg-success b-success">Success Button</button>
+        <button class="btn white bg-warning b-warning">Warning Button</button>
+        <button class="btn white bg-error b-error">Error Button</button>
+        <button class="btn white bg-dark b-dark">Dark Button</button>
+
+        <h4>Ghost Buttons</h4>
+        <button class="btn primary">Primary Button</button>
+        <button class="btn info">Info Button</button>
+        <button class="btn success">Success Button</button>
+        <button class="btn warning">Warning Button</button>
+        <button class="btn error">Error Button</button>
+        <button class="btn dark">Dark Button</button>
+
+        <h4>Rounded Buttons</h4>
+        <button class="rounded btn white bg-primary b-primary">Primary Button</button>
+        <button class="rounded btn white bg-info b-info">Info Button</button>
+        <button class="rounded btn white bg-success b-success">Success Button</button>
+        <button class="rounded btn white bg-warning b-warning">Warning Button</button>
+        <button class="rounded btn white bg-error b-error">Error Button</button>
+        <button class="rounded btn white bg-dark b-dark">Dark Button</button>
+        <br/><br/>
+        <button class="rounded btn primary">Primary Button</button>
+        <button class="rounded btn info">Info Button</button>
+        <button class="rounded btn success">Success Button</button>
+        <button class="rounded btn warning">Warning Button</button>
+        <button class="rounded btn error">Error Button</button>
+        <button class="rounded btn dark">Dark Button</button>
+
+        <h4>Pill Buttons</h4>
+        <button class="white pill btn bg-primary b-primary">Primary Button</button>
+        <button class="white pill btn bg-info b-info">Info Button</button>
+        <button class="white pill btn bg-success b-success">Success Button</button>
+        <button class="white pill btn bg-warning b-warning">Warning Button</button>
+        <button class="white pill btn bg-error b-error">Error Button</button>
+        <button class="white pill btn bg-dark b-dark">Dark Button</button>
+        <br/><br/>
+        <button class="pill btn b-primary primary">primary Button</button>
+        <button class="pill btn b-info info">Info Button</button>
+        <button class="pill btn b-success secondary">Success Button</button>
+        <button class="pill btn b-warning warning">Warning Button</button>
+        <button class="pill btn b-error error">Error Button</button>
+        <button class="pill btn b-dark dark">Dark Button</button>
+    </div>
+    <div id="alerts">
+        <h3 class="mb-1">Alerts</h3>
+        <div class="bg-error white p-2 rounded">
+            <p class="large m-0">Oh no!</p>
+            This is an example of an error alert
+        </div>
+        <br />
+        <div class="bg-warning white p-2 rounded">
+            This is an example of a warning alert
+        </div>
+    </div>
+    <div id="navbar">
+        <h3 class="mb-1">Navbar</h3>
+        <div class="bg-success pt-2 pb-2 row">
+            <div class="col">
+                <a href="#buttons" class="white p-2">Menu</a>
+                <a href="#alerts" class="white p-2">Item</a>
+                <a href="#navbar" class="white p-2">Blog</a>
+            </div>
+            <div class="2 col">
+                <a href="#full" class="white">Download</a>
+            </div>
+        </div>
+    </div>
+    <div id="badges">
+        <h3 class="mb-1">Badges</h3>
+        <h4>Heading Badge <span class="bg-warning bold white p-1 rounded">
+               New
+            </span></h4>
+        <button class="white rounded btn bg-info b-info">Button Badge <span class="badge bg-primary white">5</span>
+        </button>
+        <button class="rounded btn info">Button Badge <span class="badge bg-success white">sample</span></button>
+        <button class="rounded btn primary">Button Badge <span class="badge bg-dark white">5</span></button>
+        <button class="rounded btn dark">Btn Badge Badge-corner <span class="badge badge-corner bg-error white">1</span>
+        </button>
+        <button class="pill btn b-success">Success Button <span class="badge bg-success white">1</span></button>
+    </div>
+    <div id="list-group">
+        <h3 class="mb-1">List Groups</h3>
+        <div class="inline p-0 rounded">
+            <div class="card m-0">Some item that is long</div>
+            <div class="card m-0">Some item</div>
+            <div class="card m-0">Some item, that exists</div>
+        </div>
+        <div class="inline p-0 rounded">
+            <div class="card m-0 bg-primary white">Selected Item</div>
+            <div class="card m-0">Some item</div>
+            <div class="card m-0">Some item, that exists</div>
+        </div>
+    </div>
+</div>
+<div id="full">
+    <div class="tc vh-100 bg-dark">
+        <div class="vc container white">
+            <h1 class="mega mb-0">Name</h1>
+            <p class="large mb-2">Some description text</p>
+            <a class="btn primary pill pr-4 pl-4" href="#">A Button</a>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

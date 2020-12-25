@@ -2,7 +2,7 @@
   "name": "@tervis/lite-css",
   "version": "1.0.0",
   "description": "s small responsive css framework",
-  "main": "lite-css.css",
+  "main": "core.css",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tervis/lite-css.git"
@@ -12,15 +12,13 @@
   "private": true,
   "scripts": {
     "build": "gulp",
-    "watch": "gulp watch",
-    "serve": "gulp serve"
+    "watch": "gulp && gulp watch"
   },
   "bugs": {
     "url": "https://github.com/tervis/lite-css/issues"
   },
   "homepage": "https://github.com/tervis/lite-css#readme",
   "devDependencies": {
-    "browser-sync": "^2.26.13",
     "del": "^6.0.0",
     "gulp": "^4.0.2",
     "gulp-clean-css": "^4.3.0",

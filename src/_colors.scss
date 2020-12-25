@@ -2,21 +2,16 @@
 
 @import "variables";
 
-$theme-colors: () !default;
-$theme-colors: map-merge(
-                (
-                        "primary": $primary,
-                        "success": $success,
-                        "info": $info,
-                        "warning": $warning,
-                        "error": $error,
-                        "light": $light,
-                        "dark": $dark,
-                        "black": $black,
-                        "white": $white,
-                        "gray": $gray,
-                ),
-                $theme-colors
+$theme-colors: (
+        "primary": $primary,
+        "success": $success,
+        "info": $info,
+        "warning": $warning,
+        "error": $error,
+        "light": $light,
+        "dark": $dark,
+        "black": $black,
+        "white": $white,
 );
 
 

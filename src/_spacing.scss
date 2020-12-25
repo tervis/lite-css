@@ -5,17 +5,21 @@ $spacing-3: 2em !default;
 $spacing-4: 4em !default;
 $spacing-5: 5em !default;
 
-$spacings: () !default;
-$spacings: map-merge(
-                (
-                        "0": $spacing-0,
-                        "1": $spacing-1,
-                        "2": $spacing-2,
-                        "3": $spacing-3,
-                        "4": $spacing-4,
-                        "5": $spacing-5
-                ),
-                $spacings
+$spacings: (
+        "0": $spacing-0,
+        "1": $spacing-1,
+        "2": $spacing-2,
+        "3": $spacing-3,
+        "4": $spacing-4,
+        "5": $spacing-5
+);
+
+
+$sizes: (
+        "100": 100%,
+        "75": 75%,
+        "50": 50%,
+        "25": 25%
 );
 
 @each $spacing, $value in $spacings {
@@ -33,6 +37,33 @@ $spacings: map-merge(
 @each $spacing, $value in $spacings {
   .mb-#{$spacing} {
     margin-bottom: $value;
+  }
+}
+
+@each $size, $value in $sizes {
+  .w-#{$size} {
+    width: #{$value};
+  }
+  .h-#{$size} {
+    height: #{$value};
+  }
+}
+
+.vh- {
+  &100 {
+    height: 100vh;
+  }
+
+  &75 {
+    height: 75vh;
+  }
+
+  &50 {
+    height: 50vh;
+  }
+
+  &25 {
+    height: 25vh;
   }
 }
 
@@ -55,15 +86,26 @@ $spacings: map-merge(
 }
 
 @each $spacing, $value in $spacings {
-  .pv-#{$spacing} {
+  .pt-#{$spacing} {
     padding-top: $value;
-    padding-bottom: $value;
   }
 }
 
 @each $spacing, $value in $spacings {
-  .ph-#{$spacing} {
-    padding-right: $value;
+  .pb-#{$spacing} {
+    padding-bottom: $value;
+  }
+}
+
+
+@each $spacing, $value in $spacings {
+  .pl-#{$spacing} {
     padding-left: $value;
+  }
+}
+
+@each $spacing, $value in $spacings {
+  .pr-#{$spacing} {
+    padding-right: $value;
   }
 }

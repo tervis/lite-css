@@ -1,0 +1,52 @@
+/* Base */
+
+@import "variables";
+
+pre {
+  overflow: auto;
+  padding: 1em;
+  border: solid $light;
+}
+
+.card {
+  &:focus {
+    outline: 0;
+    border: solid $primary;
+  }
+
+  padding: 1em;
+  border: solid $light;
+}
+
+hr {
+  outline: 0;
+  border: solid $primary;
+}
+
+a {
+  &:hover {
+    opacity: .6;
+  }
+
+  color: $primary;
+  text-decoration: none;
+}
+
+.btn {
+  &:hover {
+    opacity: .6;
+  }
+
+  padding: 1em;
+  text-transform: uppercase;
+  background: $white;
+  border: solid;
+  font: .7em $font;
+}
+
+.container {
+  max-width: 60em;
+  padding: 1em;
+  margin: auto;
+  font: 1em/1.6 $font;
+}

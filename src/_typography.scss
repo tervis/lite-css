@@ -1,0 +1,38 @@
+/* Typography */
+@import "variables";
+
+h6 {
+  font: 100 1em $font;
+}
+
+h5 {
+  font: 100 1.2em $font;
+}
+
+h3 {
+  font: 100 2em $font;
+}
+
+h4 {
+  font: 100 1.5em $font;
+}
+
+h2 {
+  font: 100 2.2em $font;
+}
+
+h1 {
+  font: 100 2.5em $font;
+}
+
+td {
+  padding: 1em;
+  text-align: left;
+  border-bottom: solid $light;
+}
+
+th {
+  padding: 1em;
+  text-align: left;
+  border-bottom: solid $light;
+}
